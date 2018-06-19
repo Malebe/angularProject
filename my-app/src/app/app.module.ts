@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
 import { HomeModule } from './home/home.module';
+import { ItemsModule } from './items/items.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HomeModule } from './home/home.module';
     CoreModule,
     HomeModule,
     PageNotFoundModule,
+    ItemsModule,
     NgbModule.forRoot()
   ],
   providers: [],

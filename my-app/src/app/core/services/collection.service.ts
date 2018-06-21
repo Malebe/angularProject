@@ -43,6 +43,12 @@ export class CollectionService {
     return this.http.put<Item>(this.url, item);
   }
 
+  /**
+   * get item from collection
+   */
+  public getItemById(id: number) {
+    return this.http.get<Item>(`${this.url}/${id}`);
+  }
 
   /**
      * delete item in collection

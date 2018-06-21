@@ -18,6 +18,6 @@ import { NumCommandePipe } from './pipes/num-commande.pipe';
     ReactiveFormsModule
   ],
   declarations: [NavComponent, StateDirective, StateButtonDirective, FormComponent, FilterPipe, NumCommandePipe],
-  exports: [NavComponent, StateDirective, StateButtonDirective, FormComponent, FilterPipe]
+  exports: [NavComponent, StateDirective, StateButtonDirective, FormComponent, FilterPipe, NumCommandePipe]
 })
 export class SharedModule { }

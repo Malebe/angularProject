@@ -7,7 +7,6 @@ import { ItemsRoutingModule } from './items-routing.module';
 import { AddComponent } from './containers/add/add.component';
 import { FormsModule } from '@angular/forms';
 import { AddItemComponent } from './containers/add-item/add-item.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [

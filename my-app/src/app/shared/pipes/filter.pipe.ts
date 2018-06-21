@@ -9,5 +9,4 @@ export class FilterPipe implements PipeTransform {
     const searchTerm = args[0].trim().toLowerCase();
     return searchTerm ? value.filter(item => item.name.toLowerCase().indexOf(searchTerm) !== -1) : value;
   }
-
 }

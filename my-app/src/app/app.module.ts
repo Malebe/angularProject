@@ -13,6 +13,9 @@ import { StateButtonDirective } from './shared/directives/state-button.directive
 import { AppRoutingModule } from './app-routing.module';
 import { Router } from '@angular/router';
 import { environment } from '../environments/environment';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './core/services/in-memory-data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +30,11 @@ import { environment } from '../environments/environment';
     ItemsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    PageNotFoundModule
+    PageNotFoundModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
